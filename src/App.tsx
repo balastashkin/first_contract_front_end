@@ -1,5 +1,5 @@
 import './App.css'
-import { TonConnectButton, useTonAddress } from '@tonconnect/ui-react'
+import { TonConnectButton } from '@tonconnect/ui-react'
 import { useMainContract } from './hooks/useMainContract';
 import { useTonConnect } from './hooks/useTonconnect';
 import { fromNano } from 'ton-core';
@@ -10,8 +10,6 @@ function App() {
   const {
     contract_address,
     counter_value,
-    recent_sender,
-    owner_address,
     contract_balance,
     sendIncrement,
     sendDeposit,
